@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>AETHERBIO — 생명과학 × AI (계획 단계)</title>
   <meta name="description" content="AETHERION AI 생명과학 서브 회사 계획 페이지. 공개 데이터·오픈툴 기반의 연구 도구 방향을 정리합니다. 임상 효능·매출·인원 등 허구 주장은 없습니다."/>
+  <meta name="theme-color" content="#1fa88a"/>
   <link rel="stylesheet" href="assets/site.css"/>
 </head>
 <body>
@@ -21,6 +22,7 @@
         <p>AETHERBIO는 AETHERION AI의 생명과학 서브 회사 <strong>계획안</strong>이에요. 공개 데이터셋·오픈소스 도구 위에서, 작은 한국 팀이 실제로 닿을 수 있는 연구·교육용 방향을 정리합니다. 약효·진단·치료 효능을 주장하지 않아요.</p>
         <div class="btns">
           <a class="btn btn-p" href="#pillars">대표 방향 3개</a>
+          <a class="btn btn-g" href="#principles">원칙</a>
           <a class="btn btn-g" href="https://aetherion.o-r.kr/">모회사 AETHERION</a>
         </div>
       </div>
@@ -31,21 +33,24 @@
 
     <section class="section" id="pillars">
       <h2>대표할 만한 방향 3개</h2>
-      <p class="lead">공개 레퍼런스에 근거한 계획입니다. 가까운 것 / 먼 것을 구분했어요.</p>
+      <p class="lead">공개 레퍼런스에 근거한 계획입니다. <strong>가까운 목표(Near)</strong>와 <strong>먼 목표(Aspirational)</strong>를 분명하게 갈랐어요. 아래는 “하겠다”가 아니라 “이렇게 시작해 보려 한다”예요.</p>
       <div class="grid3">
         <article class="glass card">
           <span class="tag">가까운 목표 · Near</span>
           <h3>1. 문헌 길잡이</h3>
-          <p>PubMed 등 공개 문헌을 한국어로 더 편하게 훑는 연구 보조 도구. BioBERT·BERN 계열 공개 모델을 참고해 NER·엔티티 정규화 데모부터 시작. <strong>진단·처방 아님</strong>, 문헌 탐색·요약 보조만.</p>
+          <p>PubMed 등 공개 문헌을 한국어로 더 편하게 훑는 연구 보조 도구. BioBERT·BERN 계열 공개 모델을 참고해 NER·엔티티 정규화 데모부터. 검색 → 엔티티 하이라이트 → 짧은 한국어 요약 보조 흐름을 우선 스케치합니다.</p>
+          <p class="scope"><strong>범위.</strong> 진단·처방·임상 권고 아님. 문헌 탐색·요약·엔티티 표시만. 의료기기 아님.</p>
           <ul class="refs">
             <li><a href="https://github.com/dmis-lab/biobert" rel="noopener" target="_blank">dmis-lab/biobert</a> (Korea Univ.)</li>
             <li><a href="https://github.com/dmis-lab/bern" rel="noopener" target="_blank">dmis-lab/bern</a> · <a href="https://bern.korea.ac.kr" rel="noopener" target="_blank">BERN</a></li>
+            <li>참고: PubMed / NCBI 공개 문헌 API</li>
           </ul>
         </article>
         <article class="glass card">
           <span class="tag">가까운 목표 · Near</span>
           <h3>2. 치료 벤치마크 스튜디오</h3>
-          <p>Therapeutics Data Commons(TDC) 같은 AI-ready 공개 데이터셋·스플릿·벤치마크를 한국어 UX로 감싼 학습·평가 허브. 공정한 비교와 재현에 초점. 신약 후보를 “만든다”고 말하지 않아요.</p>
+          <p>Therapeutics Data Commons(TDC) 같은 AI-ready 공개 데이터셋·스플릿·벤치마크를 한국어 UX로 감싼 학습·평가 허브. 공정한 비교와 재현에 초점. 리더보드 UI·스플릿 고정·결과 카드 템플릿부터.</p>
+          <p class="scope"><strong>범위.</strong> 신약 후보를 “만든다/발견한다”고 말하지 않음. 공개 벤치 학습·평가·비교만.</p>
           <ul class="refs">
             <li><a href="https://github.com/mims-harvard/TDC" rel="noopener" target="_blank">mims-harvard/TDC</a></li>
             <li><a href="https://tdcommons.ai" rel="noopener" target="_blank">tdcommons.ai</a></li>
@@ -54,11 +59,31 @@
         <article class="glass card">
           <span class="tag asp">먼 목표 · Aspirational</span>
           <h3>3. 표현형 비전 랩</h3>
-          <p>공개 세포 현미경 이미지(예: RxRx3-core)로 비전 모델 벤치·교육 데모. 연구·학습용 샌드박스. <strong>임상 효능·진단 성능 주장 없음</strong>.</p>
+          <p>공개 세포 현미경 이미지(예: RxRx3-core)로 비전 모델 벤치·교육 데모. 연구·학습용 샌드박스. GPU·스토리지·데이터 라이선스 확인이 선행되어야 해서 <em>먼 목표</em>로 둡니다.</p>
+          <p class="scope"><strong>범위.</strong> 임상 효능·진단 성능 주장 없음. 공개 벤치용 축소본·교육 데모만 검토.</p>
           <ul class="refs">
             <li><a href="https://www.recursion.com/news/accelerating-ai-drug-discovery-with-open-source-datasets" rel="noopener" target="_blank">Recursion · RxRx3-core 공개 안내</a></li>
             <li>관련: Hugging Face의 RxRx3-core 배포(공개 벤치용 축소본)</li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <h2>일하는 원칙</h2>
+      <p class="lead">모회사 AETHERION과 같은 DNA — 정직·한국어 우선·Liquid Glass 감성.</p>
+      <div class="principles">
+        <article class="glass prin">
+          <h3>공개 데이터만</h3>
+          <p>라이선스 확인된 공개 데이터셋·오픈툴 위에서만 계획. 비공개 환자 데이터·무단 스크래핑 없음.</p>
+        </article>
+        <article class="glass prin">
+          <h3>주장하지 않는 UX</h3>
+          <p>약효·진단·치료 효능·매출·인원·파트너십을 사실처럼 쓰지 않아요. 계획 배지가 항상 보입니다.</p>
+        </article>
+        <article class="glass prin">
+          <h3>한국어 연구 보조</h3>
+          <p>영문 도구를 그대로 두지 않고, 한국어로 읽고 요약·탐색하기 쉬운 쪽을 우선합니다.</p>
         </article>
       </div>
     </section>
@@ -69,9 +94,10 @@
           <strong>AETHERION family</strong>
           <div style="color:var(--dim);font-size:.92rem;margin-top:4px">모회사 AI 스튜디오 · 생명과학 · 초고압축 OS — 브랜드 DNA는 공유, 제품은 각자.</div>
         </div>
-        <div class="btns">
-          <a class="btn btn-g" href="https://aetherion.o-r.kr/">aetherion.o-r.kr</a>
-          <a class="btn btn-g" href="https://aetheros.o-r.kr/">aetheros.o-r.kr</a>
+        <div class="family-links">
+          <a class="pill" href="https://aetherion.o-r.kr/"><span class="dot" style="background:#ff7a3d"></span>AETHERION</a>
+          <a class="pill" href="https://aetherbio.o-r.kr/"><span class="dot" style="background:#1fa88a"></span>AETHERBIO</a>
+          <a class="pill" href="https://aetheros.o-r.kr/"><span class="dot" style="background:#8b5cff"></span>AETHEROS</a>
         </div>
       </div>
     </section>
